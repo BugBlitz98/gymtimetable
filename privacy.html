@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — GymTimeTable</title>
+    <meta name="description" content="Privacy Policy for GymTimeTable. Learn about our strict offline-first structure. No account registration, no tracking, and 100% local device storage.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0A0A0F;
+            --card-bg: rgba(20, 20, 28, 0.6);
+            --card-border: rgba(229, 57, 53, 0.15);
+            --primary: #E53935;
+            --primary-glow: rgba(229, 57, 53, 0.4);
+            --text-main: #FFFFFF;
+            --text-secondary: #9E9EAF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(229, 57, 53, 0.06) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        /* Header Navigation */
+        header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--primary);
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            margin-left: 24px;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 800px;
+            margin: 60px auto 120px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--primary);
+            padding-left: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+
+        li {
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+            font-weight: 300;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--primary);
+            font-size: 1.25rem;
+            position: absolute;
+            left: 6px;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background: rgba(76, 175, 80, 0.05);
+            border: 1px solid rgba(76, 175, 80, 0.2);
+            border-radius: 14px;
+            padding: 24px;
+            margin: 30px 0;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .highlight-box svg {
+            color: #4CAF50;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .highlight-box p {
+            color: #E0E0E6;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: rgba(10, 10, 15, 0.9);
+            padding: 60px 20px 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 1.2rem;
+        }
+
+        .footer-logo span {
+            color: var(--primary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            .policy-card {
+                padding: 24px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="index.html" class="logo-container" id="nav-logo">
+            <img src="images/app_logo.png" alt="GymTimeTable App Icon" class="logo-icon">
+            <span class="logo-text">GymTime<span>Table</span></span>
+        </a>
+        <nav>
+            <a href="index.html#features" id="link-features">Features</a>
+            <a href="privacy.html" id="link-privacy">Privacy Policy</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1>Privacy <span>Policy</span></h1>
+        <p class="last-updated">Last Updated: June 6, 2026</p>
+
+        <div class="policy-card">
+            <h2>1. Privacy Principles</h2>
+            <p>GymTimeTable was built with privacy as our core design philosophy. We believe that your health, routine, and training metrics are personal and should remain strictly under your control. We do not gather, store, or sell any information about your use of the application.</p>
+
+            <div class="highlight-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <p><strong>Offline-First Promise:</strong> GymTimeTable operates 100% offline. There are no remote databases, analytics integrations, account creation flows, or external API endpoints. Everything you input stays on your phone.</p>
+            </div>
+
+            <h2>2. Data Collection & Usage</h2>
+            <p>We do not collect any personal data or logs. Below is a breakdown of what happens to the details you enter inside the app:</p>
+            <ul>
+                <li><strong>Workout Logs & Schedules:</strong> All workout routines, weights, repetitions, muscle analytics, and scheduled workout sessions are stored directly on your local device.</li>
+                <li><strong>Local Storage Technology:</strong> The app utilizes high-speed on-device MMKV storage. This is a key-value storage framework located entirely in your phone's sandbox directory.</li>
+                <li><strong>Reminders and Alarms:</strong> When you set a daily gym reminder, a local Android alarm trigger is registered. No external server knows about or manages your schedules.</li>
+            </ul>
+
+            <h2>3. Third-Party Services</h2>
+            <p>GymTimeTable does not incorporate third-party SDKs, tracking libraries, ad networks, or analytics tools (such as Google Analytics or Firebase). There are no cloud storage backups configured by default.</p>
+
+            <h2>4. Permissions</h2>
+            <p>The app requests the following system permission solely to support user-selected local features:</p>
+            <ul>
+                <li><strong>Schedule Exact Alarm (USE_EXACT_ALARM):</strong> Used strictly on your Android device to trigger daily reminders or workout alarm notifications at the precise time specified by you in the Settings panel.</li>
+            </ul>
+
+            <h2>5. Data Deletion</h2>
+            <p>Since all data remains exclusively on your physical phone, you can delete your data at any time by:</p>
+            <ul>
+                <li>Clearing the app storage or cache through your device settings.</li>
+                <li>Uninstalling the GymTimeTable application.</li>
+            </ul>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy occasionally. Because there are no accounts or email addresses stored, updates will be posted directly on this page. We encourage you to review this policy periodically to stay informed of our commitment to on-device privacy.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy, please contact us at: <strong>support@gymtimetable.local</strong></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo" id="footer-logo">
+                <span>GymTime</span>Table
+            </a>
+            <div class="footer-links">
+                <a href="index.html#features" id="footer-features">Features</a>
+                <a href="privacy.html" id="footer-privacy">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GymTimeTable. All rights reserved. Your workouts, your data, completely private.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
